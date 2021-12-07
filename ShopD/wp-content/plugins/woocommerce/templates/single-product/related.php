@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Related Products
  *
@@ -15,40 +16,75 @@
  * @version     3.9.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
 	exit;
 }
 
-if ( $related_products ) : ?>
+if ($related_products) : ?>
 
 	<section class="related products">
 
 		<?php
-		$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Related products', 'woocommerce' ) );
+		$heading = apply_filters('woocommerce_product_related_products_heading', __('Related products', 'woocommerce'));
 
-		if ( $heading ) :
-			?>
-			<h2><?php echo esc_html( $heading ); ?></h2>
+		if ($heading) :
+		?>
+			<h2><?php echo esc_html($heading); ?></h2>
 		<?php endif; ?>
-		
+
 		<?php woocommerce_product_loop_start(); ?>
 
-			<?php foreach ( $related_products as $related_product ) : ?>
+		<?php foreach ($related_products as $related_product) : ?>
 
-					<?php
-					$post_object = get_post( $related_product->get_id() );
+			<?php
+			$post_object = get_post($related_product->get_id());
 
-					setup_postdata( $GLOBALS['post'] =& $post_object ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited, Squiz.PHP.DisallowMultipleAssignments.Found
+			setup_postdata($GLOBALS['post'] = &$post_object); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited, Squiz.PHP.DisallowMultipleAssignments.Found
 
-					wc_get_template_part( 'content', 'product' );
-					?>
+			wc_get_template_part('content', 'product');
+			?>
 
-			<?php endforeach; ?>
+		<?php endforeach; ?>
 
 		<?php woocommerce_product_loop_end(); ?>
 
 	</section>
 	<?php
+	// ================================ Thêm code sản phẩm vừa xem  =========================================== //
+	global $woocommerce;
+	$viewed_products = !empty($_COOKIE['woocommerce_recently_viewed']) ? (array) explode('|', $_COOKIE['woocommerce_recently_viewed']) : array();
+	$viewed_products = array_filter(array_map('absint', $viewed_products));
+	?>
+	<div class="recently-viewed">
+		<?php
+		$query_args = array(
+			'posts_per_page' => 4, // Hiển thị số lượng sản phẩm đã xem
+			'post_status'    => 'publish',
+			'post_type'      => 'product',
+			'post__in'       => $viewed_products,
+			'orderby'        => 'rand'
+		);
+		$query_args['meta_query'] = array();
+		$query_args['meta_query'][] = $woocommerce->query->stock_status_meta_query();
+		$r = new WP_Query($query_args);
+
+		if ($r->have_posts()) {
+		?>
+			<div class="giniit-title">
+				<h2>Recently viewed product</h2>
+			</div>
+		<?php
+			while ($r->have_posts()) {
+				$r->the_post();
+				get_template_part('template-parts/content', get_post_type()); // Giao diện hiển thị theo ý bạn muốn
+			}
+		};
+		wp_reset_postdata();
+		?>
+	</div>
+
+	<!-- ================================================================================================= -->
+<?php
 endif;
 
 wp_reset_postdata();

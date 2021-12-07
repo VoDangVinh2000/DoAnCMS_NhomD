@@ -7,15 +7,22 @@
  */
 
 get_header(); 
+
 ?>
 <div id="inner-content-wrapper" class="container page-section">
-    <div id="primary" class="content-area">
+	<!-- =================== Nếu là trang deatail======================= -->
+	<?php if(is_singular( 'product' )){?>
+    	<div id="primary" class='content-area product__detail'>
+	<?php } else {?>
+		<div id="primary" class='content-area'>
+	<?php }?>
+	<!-- ========================================== -->
         <main id="main" class="site-main" role="main">
 			
 			<?php if (class_exists('WooCommerce') && is_woocommerce()) : ?>	
 				<div><?php woocommerce_breadcrumb(); ?></div>
 			<?php endif; ?>		
-		
+				
 			<?php woocommerce_content(); ?>
 			
 		</main><!-- #main -->
