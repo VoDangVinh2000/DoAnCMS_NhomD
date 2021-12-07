@@ -160,9 +160,9 @@ if ( ! function_exists( 'ecommerce_plus_setup' ) ) :
 				'text_about',
 			),
 			// Put two core-defined widgets in the footer 2 area.
-			'footer-sidebar-4' => array(
-				'search',
-			),					
+			// 'footer-sidebar-4' => array(
+			// 	'search',
+			// ),					
 		),
 
 		// Specify the core-defined pages to create and add custom thumbnails to some of them.
