@@ -22,6 +22,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $product;
 ?>
 
-<?php if ( $price_html = $product->get_price_html() ) : ?>
-	<span class="price"><?php echo $price_html; ?></span>
+<?php if ( $price_html = $product->get_price() ) : ?>
+	<span class="price"><?php echo wc_admin_number_format($price_html) . 'đ'; ?></span>
 <?php endif; ?>
