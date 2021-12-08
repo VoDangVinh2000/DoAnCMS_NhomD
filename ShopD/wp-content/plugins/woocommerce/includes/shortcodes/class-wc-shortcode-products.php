@@ -657,6 +657,7 @@ class WC_Shortcode_Products {
 					add_action( 'woocommerce_product_is_visible', array( $this, 'set_product_as_visible' ) );
 
 					// Render product template.
+					// get_template_part('content','page');
 					wc_get_template_part( 'content', 'product' );
 
 					// Restore product visibility.
@@ -680,7 +681,7 @@ class WC_Shortcode_Products {
 			do_action( "woocommerce_shortcode_{$this->type}_loop_no_results", $this->attributes );
 		}
 
-		return '<div class="' . esc_attr( implode( ' ', $classes ) ) . '">' . ob_get_clean() . '</div>';
+		return '<div class="' . esc_attr( implode( ' ', $classes ) ) . '">' . ob_get_clean() .  '</div>';
 	}
 
 	/**

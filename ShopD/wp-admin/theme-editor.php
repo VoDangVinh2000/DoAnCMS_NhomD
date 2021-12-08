@@ -88,7 +88,7 @@ foreach ( $file_types as $type ) {
 			$style_files                = $theme->get_files( 'css', -1 );
 			$allowed_files['style.css'] = $style_files['style.css'];
 			$allowed_files             += $style_files;
-			break;
+			break;	
 		default:
 			$allowed_files += $theme->get_files( $type, -1 );
 			break;
