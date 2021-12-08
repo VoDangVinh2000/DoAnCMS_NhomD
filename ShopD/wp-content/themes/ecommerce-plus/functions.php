@@ -701,8 +701,40 @@ function ecommerce_plus_site_navigation() {
 			
 			$options  = ecommerce_plus_get_theme_options(); 
 ?>
-			<div id="site-menu">
+			<div id="site-menu " class="menu-from-serach">
 			
+			<div class="woo-product-search-form text-center">
+             <form method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+               <select class="woo-product-search-select" name="product_cat">
+                 <option value="">
+                 <?php esc_html_e( 'All Products', 'ecommerce-plus' ); ?>
+                 </option>
+                 <?php
+		 						$args = array(
+		 							'taxonomy'     => 'product_cat',
+		 							'orderby'      => 'date',
+		 							'order'      	=> 'ASC',
+		 							'show_count'   => 1,
+		 							'pad_counts'   => 0,
+		 							'hierarchical' => 1,
+		 							'title_li'     => '',
+		 							'hide_empty'   => 1,
+		 						);
+		 						$categories = get_categories( $args);
+		 						foreach ( $categories as $category ) {
+		 							$option = '<option value="' . esc_attr( $category->category_nicename ) . '">';
+		 							$option .= esc_html( $category->cat_name );
+		 							$option .= ' (' . absint( $category->category_count ) . ')';
+		 							$option .= '</option>';
+		 							echo ($option); 
+		 						}
+		 						?>
+               </select>
+               <input type="hidden" name="post_type" value="product" />
+               <input class="woo-product-search-input" name="s" type="text" placeholder="<?php esc_attr_e( 'Search...', 'ecommerce-plus' ); ?>"/>
+               <button class="woo-product-search-button" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+             </form>
+           </div>
 
 			<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Primary Menu">
 			
