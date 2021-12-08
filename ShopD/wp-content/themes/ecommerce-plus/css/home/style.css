@@ -1,0 +1,113 @@
+
+
+.main-home-page{
+    max-width: 1680px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.category{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 10px 10px;
+}
+.category-inside{
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+}
+.category-image{
+   
+    max-width: 100%;
+}
+.inside-category-image{
+    max-width: 300px;
+    max-height: 320px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    width: 100%;
+}
+.category-image img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    background-image: none;
+    
+}
+.category-image a{
+    display: block;
+    width: 100%;
+}
+
+/*css for feature products*/
+.feature-product{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.feature-product-inside{
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+}
+.feature-product-image{
+    max-width: 100%;
+}
+.inside-feature-product-image{
+    max-width: 300px;
+    max-height: 320px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+}
+.feature-product-image img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    background-image: none;
+}
+.feature-product-image a{
+    display: block;
+    width: 100%;
+}
+/*end css for feature products*/
+
+/*css for new products*/
+.new-products{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.new-products-inside{
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+}
+.new-products-image{
+    max-width: 100%;
+}
+.inside-new-products-image{
+    max-width: 300px;
+    max-height: 320px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+}
+.new-products-image img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    background-image: none;
+    background-repeat: no-repeat;
+}
+.new-products-image a{
+    display: block;
+    width: 100%;
+}
+
+/*end css for new products*/

@@ -1,0 +1,38 @@
+2021-12-07T03:49:34+00:00 CRITICAL syntax error, unexpected 'var_dump' (T_STRING) in D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-content\themes\ecommerce-plus\index.php on line 56
+
+2021-12-07T09:22:17+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Query as array in D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-content\plugins\woocommerce\includes\wc-product-functions.php:42
+Stack trace:
+#0 D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-content\themes\ecommerce-plus\index.php(97): wc_get_products(Object(WP_Query))
+#1 D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-includes\template-loader.php(106): include('D:\\HK5-2021\\CHU...')
+#2 D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-blog-header.php(19): require_once('D:\\HK5-2021\\CHU...')
+#3 D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\index.php(17): require('D:\\HK5-2021\\CHU...')
+#4 {main}
+  thrown in D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-content\plugins\woocommerce\includes\wc-product-functions.php on line 42
+
+2021-12-07T09:26:39+00:00 CRITICAL Uncaught Error: Using $this when not in object context in D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-content\plugins\woocommerce\includes\class-wc-product-variable.php:209
+Stack trace:
+#0 D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-content\themes\ecommerce-plus\index.php(98): WC_Product_Variable::get_children()
+#1 D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-includes\template-loader.php(106): include('D:\\HK5-2021\\CHU...')
+#2 D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-blog-header.php(19): require_once('D:\\HK5-2021\\CHU...')
+#3 D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\index.php(17): require('D:\\HK5-2021\\CHU...')
+#4 {main}
+  thrown in D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-content\plugins\woocommerce\includes\class-wc-product-variable.php on line 209
+
+2021-12-07T09:28:20+00:00 CRITICAL Uncaught Error: Using $this when not in object context in D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-content\plugins\woocommerce\includes\class-wc-product-variable.php:227
+Stack trace:
+#0 D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-content\themes\ecommerce-plus\index.php(98): WC_Product_Variable::get_visible_children()
+#1 D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-includes\template-loader.php(106): include('D:\\HK5-2021\\CHU...')
+#2 D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-blog-header.php(19): require_once('D:\\HK5-2021\\CHU...')
+#3 D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\index.php(17): require('D:\\HK5-2021\\CHU...')
+#4 {main}
+  thrown in D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-content\plugins\woocommerce\includes\class-wc-product-variable.php on line 227
+
+2021-12-07T13:33:53+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Query as array in D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-content\plugins\woocommerce\includes\wc-product-functions.php:42
+Stack trace:
+#0 D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-content\themes\ecommerce-plus\index.php(96): wc_get_products(Object(WP_Query))
+#1 D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-includes\template-loader.php(106): include('D:\\HK5-2021\\CHU...')
+#2 D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-blog-header.php(19): require_once('D:\\HK5-2021\\CHU...')
+#3 D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\index.php(17): require('D:\\HK5-2021\\CHU...')
+#4 {main}
+  thrown in D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-content\plugins\woocommerce\includes\wc-product-functions.php on line 42
+

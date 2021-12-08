@@ -1,0 +1,10 @@
+2021-12-06T10:32:33+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Query as array in D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-content\themes\ecommerce-plus\index.php:36
+Stack trace:
+#0 D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-includes\template-loader.php(106): include()
+#1 D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-blog-header.php(19): require_once('D:\\HK5-2021\\CHU...')
+#2 D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\index.php(17): require('D:\\HK5-2021\\CHU...')
+#3 {main}
+  thrown in D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-content\themes\ecommerce-plus\index.php on line 36
+
+2021-12-06T10:33:55+00:00 CRITICAL syntax error, unexpected ';', expecting ')' in D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-content\themes\ecommerce-plus\index.php on line 36
+
