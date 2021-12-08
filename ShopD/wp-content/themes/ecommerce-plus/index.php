@@ -57,6 +57,7 @@ get_header();
 		</div>
 	</div>
 
+	<!-- Danh sách sản phẩm nổi bật !-->
 	<div class="feature-product" 
 	data-aos-anchor-placement="top-center" 
 	data-aos="fade-up" data-aos-offset="0" 
