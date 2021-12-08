@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The main template file.
  *
@@ -14,52 +15,89 @@
  * @since 1.0.0
  */
 
-get_header(); 
+get_header();
 ?>
-
-<div id="inner-content-wrapper" class="container page-section">
-    <div id="primary" class="content-area">
-        <main id="main" class="site-main" role="main">
-            <div class="archive-blog-wrapper">
-				<?php
-				if ( have_posts() ) : ?>
-
-					<?php
-					/* Start the Loop */
-					while ( have_posts() ) : the_post();
-
-						/*
-						 * Include the Post-Format-specific template for the content.
-						 * If you want to override this in a child theme, then include a file
-						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-						 */
-						get_template_part( 'template-parts/content', get_post_format() );
-
-					endwhile;
-
-				else :
-
-					get_template_part( 'template-parts/content', 'none' );
-
-				endif; ?>
-			</div>
-			<?php  
-			/**
-			* Hook - ecommerce_plus_action_pagination.
-			*
-			* @hooked ecommerce_plus_pagination 
-			*/
-			do_action( 'ecommerce_plus_action_pagination' ); 
+<div class="main-home-page">
+	<div class="category py-4"  
+	data-aos-anchor-placement="top-center" 
+	data-aos="fade-up" data-aos-offset="0" 
+	data-aos-delay="35" data-aos-duration="1000" 
+	data-aos-easing="ease-in-out" 
+	data-aos-mirror="true" 
+	data-aos-once="false">
+		<div class="row">
+			<?php
+			$category = get_categories(array(
+				'orderby' => 'name',
+				'hide_empty' => 0,
+				'taxonomy' => 'product_cat'
+			));
+			foreach ($category as $categories) {
+				$thumbnail_id = get_term_meta($categories->term_id, 'thumbnail_id', true);
+				$image = wp_get_attachment_url($thumbnail_id);
 			?>
-		</main><!-- #main -->
-	</div><!-- #primary -->
+				<div class="col-sm-4">
+					<div class="category-inside">
+						<div class="category-image">
+							<div class="inside-category-image">
+								<a href="<?= get_category_link($categories->term_id) ?>">
+									<img src="<?= $image ?>" alt="<?= $categories->slug ?>">
+								</a>
+							</div>
 
-	<?php  
-	if ( ecommerce_plus_is_sidebar_enable() ) {
-		get_sidebar();
-	}
+						</div>
+						<div class="category-name">
+							<a href="<?= get_category_link($categories->term_id) ?>">
+								<h3><?= $categories->name ?></h3>
+							</a>
+						</div>
+					</div>
+				</div>
+			<?php } ?>
+		</div>
+	</div>
+
+	<div class="feature-product" 
+	data-aos-anchor-placement="top-center" 
+	data-aos="fade-up" data-aos-offset="0" 
+	data-aos-delay="35" 
+	data-aos-duration="1000" 
+	data-aos-easing="ease-in-out" 
+	data-aos-mirror="true" data-aos-once="false">
+		<h1 class="text-center">Feature Products</h1>
+		<div class="row">
+			<?php
+			$feature_products = wc_get_products(array('featured' => true));
+			?>
+			<?php foreach ($feature_products as $index => $item) {
+				$id_feature_products = wc_get_featured_product_ids($item);
+				$images = wp_get_attachment_image_src(get_post_thumbnail_id($id_feature_products[$index]), 'single-post-thumbnail');
+			?>
+				<div class="col-sm-4">
+					<div class="feature-product-inside">
+						<div class="feature-product-image">
+							<div class="inside-feature-product-image">
+								<a href="<?= $item->get_permalink() ?>">
+									<img src="<?= $images[0] ?>" alt="<?= $item->name ?>">
+								</a>
+							</div>
+						</div>
+						<div class="feature-product-name">
+							<h3><?= $item->name ?></h3>
+						</div>
+						<div class="feature-product-price">
+							<p class="text-muted"> Giá từ: <?= wc_admin_number_format($item->get_price()) . 'đ' ?></p>
+						</div>
+					</div>
+				</div>
+			<?php } ?>
+		</div>
+	</div>
+
+	<!-- New products !-->
+	<?php
+	echo  strip_shortcodes(do_shortcode('[recent_products per_page="3" order="desc"]'));
 	?>
-</div><!-- .wrapper -->
-
+</div>
 <?php
 get_footer();
