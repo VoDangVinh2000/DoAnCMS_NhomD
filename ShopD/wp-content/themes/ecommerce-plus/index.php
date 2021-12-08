@@ -94,7 +94,7 @@ get_header();
 		</div>
 	</div>
 
-	<!-- New products !-->
+	<!-- New products  !-->
 	<?php
 	echo  strip_shortcodes(do_shortcode('[recent_products per_page="3" order="desc"]'));
 	?>
