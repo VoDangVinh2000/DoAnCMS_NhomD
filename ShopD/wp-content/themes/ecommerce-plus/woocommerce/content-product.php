@@ -25,19 +25,87 @@ if (empty($product) || !$product->is_visible()) {
 	return;
 }
 ?>
-<div class="col-sm-4">
-	<div class="new-products-inside">
-		<div class="new-products-image">
-			<div class="inside-new-products-image">
-				<?php do_action('woocommerce_before_shop_loop_item_title') ?>
+<?php
+if (!is_single()) {
+?>
+	<div class="col-sm-4">
+		<div class="new-products-inside">
+			<div class="new-products-image">
+				<div class="inside-new-products-image">
+					<?php do_action('woocommerce_before_shop_loop_item') ?>
+					<?php do_action('woocommerce_before_shop_loop_item_title') ?>
+					<?php do_action('woocommerce_after_shop_loop_item') ?>
+				</div>
+			</div>
+			<div class="new-products-name">
+				<?php do_action('woocommerce_shop_loop_item_title') ?>
+			</div>
+			<div class="new-products-price">
+				<p class="text-muted">Giá từ: <?php do_action('woocommerce_after_shop_loop_item_title') ?></p>
 			</div>
 		</div>
-		<div class="new-products-name">
-			<?php do_action('woocommerce_shop_loop_item_title') ?>
-		</div>
-		<div class="new-products-price">
-			<p class="text-muted">Giá từ: <?php do_action('woocommerce_after_shop_loop_item_title') ?></p>
-		</div>
-	</div>
 
-</div>
+	</div>
+<?php } else { ?>
+
+	<li <?php wc_product_class('', $product); ?>>
+		<?php
+
+		/**
+		 * Hook: woocommerce_before_shop_loop_item.
+		 *
+		 * @hooked woocommerce_template_loop_product_link_open - 10
+		 */
+		do_action('woocommerce_before_shop_loop_item');
+
+		/**
+		 * Hook: woocommerce_before_shop_loop_item_title.
+		 *
+		 * @hooked woocommerce_show_product_loop_sale_flash - 10
+		 * @hooked woocommerce_template_loop_product_thumbnail - 10
+		 */
+		do_action('woocommerce_before_shop_loop_item_title');
+
+		/**
+		 * Hook: woocommerce_shop_loop_item_title.
+		 *
+		 * @hooked woocommerce_template_loop_product_title - 10
+		 */
+		do_action('woocommerce_shop_loop_item_title');
+
+		/**
+		 * Hook: woocommerce_after_shop_loop_item_title.
+		 *
+		 * @hooked woocommerce_template_loop_rating - 5
+		 * @hooked woocommerce_template_loop_price - 10
+		 */
+		do_action('woocommerce_after_shop_loop_item_title');
+
+		/**
+		 * Hook: woocommerce_after_shop_loop_item.
+		 *
+		 * @hooked woocommerce_template_loop_product_link_close - 5
+		 * @hooked woocommerce_template_loop_add_to_cart - 10
+		 */
+		do_action('woocommerce_after_shop_loop_item');
+		?>
+
+		<div class="my-yith-wishlist">
+			<?php
+			if (class_exists('YITH_WCWL')) {
+				echo do_shortcode('[yith_wcwl_add_to_wishlist product_id="' . $product->get_id() . '"]');
+			}
+			if (class_exists('YITH_WOOCOMPARE')) {
+				echo do_shortcode('[yith_compare_button product_id=' . $product->get_id() . ']');
+			}
+
+			if (class_exists('YITH_WCQV')) {
+				echo do_shortcode('[yith_quick_view product_id=' . $product->get_id() . '  type="button" label="' . esc_html__("Quick View", 'ecommerce-plus') . '"]');
+			}
+			?>
+		</div>
+
+	</li>
+
+
+<?php } ?>
