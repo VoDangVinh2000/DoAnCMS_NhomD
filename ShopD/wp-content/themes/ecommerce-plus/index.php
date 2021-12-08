@@ -18,6 +18,7 @@
 get_header();
 ?>
 <div class="main-home-page">
+	<!-- Six cateogies !-->
 	<div class="category py-4"  
 	data-aos-anchor-placement="top-center" 
 	data-aos="fade-up" data-aos-offset="0" 
