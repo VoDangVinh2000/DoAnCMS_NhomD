@@ -5851,23 +5851,30 @@ select.woo-product-search-select:focus {
 @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 /* font-family: "Tajawal", sans-serif !important; */
 
-.product__detail .product_title {
-  font-family: "Tajawal", sans-serif !important;
-  overflow: hidden;
-  animation: 10s run infinite !important;
-}
-@keyframes run {
-  0% {
-    transform: translateX(418px);
-  }
-  100% {
-    transform: translateX(-450px);
-  }
+.product__detail .slick-arrow {
+  border-radius: 100%;
+  margin: 0 10px;
 }
 
 .product__detail .wcvs-swatch-color,
 .product__detail .variation_check {
   border-radius: 0px;
+}
+
+.product__detail .wcvs-swatch-color .wcvs-color-tooltip {
+  height: 35px;
+  width: 117px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-15px);
+  transition: 0.5s all ease;
+}
+
+.product__detail .wcvs-swatch-color:hover .wcvs-color-tooltip {
+  transform: translateY(0px);
+  background: #000;
+  color: #fff;
 }
 
 .product__detail .swatch-gold {
@@ -5897,11 +5904,6 @@ select.woo-product-search-select:focus {
   border: 2px solid #d0d1d3 !important;
 }
 
-.product__detail .slick-arrow {
-  border-radius: 100%;
-  margin: 0 10px;
-}
-
 .product__detail .reset_variations {
   background: #f0a53d;
   padding: 10px 33px;
@@ -5910,6 +5912,89 @@ select.woo-product-search-select:focus {
 
 .product__detail .reset_variations:hover {
   background: #c77d16;
+}
+
+.product__detail .woocommerce-Price-amount {
+  font-weight: 700 !important;
+  color: #f0a53d;
+}
+
+.product__detail .single_variation_wrap .woocommerce-variation-price {
+  margin: 20px 0;
+}
+
+.product__detail .single_variation_wrap .woocommerce-Price-amount {
+  border: 1px solid #f0a53d;
+  padding: 10px;
+}
+
+.product__detail .product_title {
+  font-family: "Tajawal", sans-serif !important;
+  overflow: hidden;
+  animation: 10s run infinite !important;
+}
+@keyframes run {
+  0% {
+    transform: translateX(418px);
+  }
+  100% {
+    transform: translateX(-450px);
+  }
+}
+
+.product__detail .woocommerce-product-rating {
+  display: flex;
+  align-items: center;
+}
+
+.product__detail .woocommerce-product-rating a {
+  padding-left: 10px;
+  color: #c4c4c4;
+}
+
+.product__detail .woocommerce-product-rating a:hover {
+  color: #f09920;
+}
+
+.product__detail .woocommerce-product-details__short-description p {
+  margin: 0;
+}
+
+.product__detail .woocommerce-product-details__short-description p strong {
+  display: inline-block;
+  font-family: "Tajawal", sans-serif !important;
+  background: #f0a53d;
+  color: #fff;
+  padding: 5px 7px;
+  font-size: 15px;
+}
+
+.product__detail .type-product span.price {
+  color: #f0a53d;
+}
+
+.product__detail .woocommerce-product-details__short-description ul {
+  border: 1px solid #f0a53d;
+  padding: 10px;
+  overflow: auto;
+  height: 315px;
+}
+
+.product__detail .woocommerce-product-details__short-description ul li {
+  font-family: "Tajawal", sans-serif !important;
+}
+
+.product__detail
+  .woocommerce-product-details__short-description
+  ul::-webkit-scrollbar {
+  width: 7px;
+}
+
+.product__detail
+  .woocommerce-product-details__short-description
+  ul::-webkit-scrollbar-thumb {
+  background: #f0a53d;
+  border-radius: 3px;
 }
 
 .product__detail .woocommerce-variation-add-to-cart {
@@ -5938,70 +6023,6 @@ select.woo-product-search-select:focus {
   color: #fff !important;
 }
 
-.product__detail .wcvs-swatch-color .wcvs-color-tooltip {
-  height: 35px;
-  width: 117px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(-15px);
-  transition: 0.5s all ease;
-}
-
-.product__detail .wcvs-swatch-color:hover .wcvs-color-tooltip {
-  transform: translateY(0px);
-  background: #000;
-  color: #fff;
-}
-
-.product__detail .woocommerce-product-details__short-description p {
-  /* border-bottom: 2px solid #f0a53d; */
-  margin: 0;
-}
-
-.product__detail .woocommerce-product-details__short-description p strong {
-  display: inline-block;
-  font-family: "Tajawal", sans-serif !important;
-  background: #f0a53d;
-  color: #fff;
-  padding: 5px 7px;
-  font-size: 15px;
-}
-
-.product__detail .type-product span.price {
-  color: #f0a53d;
-}
-
-.product__detail .woocommerce-product-details__short-description ul {
-  border: 1px solid #f0a53d;
-  padding: 10px;
-  overflow: auto;
-  height: 315px;
-  /* box-shadow: 0 0 25px rgba(0 0 0 / 30%); */
-}
-
-.product__detail .woocommerce-product-details__short-description ul li {
-  font-family: "Tajawal", sans-serif !important;
-}
-
-.product__detail
-  .woocommerce-product-details__short-description
-  ul::-webkit-scrollbar {
-  width: 7px;
-}
-
-.product__detail
-  .woocommerce-product-details__short-description
-  ul::-webkit-scrollbar-thumb {
-  background: #f0a53d;
-  border-radius: 3px;
-}
-
-.product__detail .woocommerce-Price-amount {
-  font-weight: 700 !important;
-  color: #f0a53d;
-}
-
 .product__detail .quantity .input-text {
   width: 50% !important;
   outline: none;
@@ -6009,6 +6030,20 @@ select.woo-product-search-select:focus {
 
 .product__detail .quantity .input-text:focus {
   border: 1px solid #f0a53d;
+}
+
+.product__detail .product_meta {
+  display: grid;
+  font-size: 12px !important;
+}
+
+.product__detail .product_meta,
+.product__detail .product_meta a {
+  color: gray;
+}
+
+.product__detail .product_meta a:hover {
+  color: crimson;
 }
 
 .product__detail .woocommerce-tabs ul.tabs li.active {
@@ -6020,9 +6055,12 @@ select.woo-product-search-select:focus {
 .product__detail .woocommerce-tabs ul.tabs li.active a:focus {
   outline: none;
 }
+
 .product__detail .woocommerce-tabs ul.tabs::before {
   border-bottom: 2px solid #f0a53d !important;
 }
+
+/* =========================================== */
 
 .product__detail .related li.type-product {
   overflow: hidden;
@@ -6032,9 +6070,9 @@ select.woo-product-search-select:focus {
   height: 400px;
   animation: 4s tranlate infinite linear;
 }
+
 .product__detail .related li.type-product:hover{
-	animation: none;
-	
+	animation: none;	
 }
 
 .product__detail .related li.type-product:first-child{
@@ -6059,8 +6097,6 @@ select.woo-product-search-select:focus {
 		transform: translateY(0);
 	}
 }
-
-
 
 .product__detail .related li.type-product .onsale {
   top: 15px !important;
@@ -6129,32 +6165,6 @@ select.woo-product-search-select:focus {
 }
 .product__detail .price {
   color: #f0a53d !important;
-}
-
-.product__detail .single_variation_wrap .woocommerce-variation-price {
-  margin: 20px 0;
-}
-
-.product__detail .single_variation_wrap .woocommerce-Price-amount {
-  border: 1px solid #f0a53d;
-  padding: 10px;
-}
-
-.product__detail .product_meta {
-  display: grid;
-  font-size: 12px !important;
-}
-
-.product__detail .product_meta {
-  color: gray;
-}
-
-.product__detail .product_meta a {
-  color: gray;
-}
-
-.product__detail .product_meta a:hover {
-  color: crimson;
 }
 
 .product__detail .related > h2 {
@@ -6249,20 +6259,6 @@ select.woo-product-search-select:focus {
 
 .product__detail .post-item-wrapper .posted-on a {
   background: #f0a53d;
-}
-
-.product__detail .woocommerce-product-rating {
-  display: flex;
-  align-items: center;
-}
-
-.product__detail .woocommerce-product-rating a {
-  padding-left: 10px;
-  color: #c4c4c4;
-}
-
-.product__detail .woocommerce-product-rating a:hover {
-  color: #f09920;
 }
 
 /* =============================END  CSS Detail ========================================= */
