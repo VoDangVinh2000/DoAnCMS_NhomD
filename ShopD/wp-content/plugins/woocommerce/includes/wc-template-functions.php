@@ -3543,13 +3543,39 @@ function wc_get_stock_html( $product ) {
  * @return string
  */
 function wc_get_rating_html( $rating, $count = 0 ) {
-	$html = '';
 
-	if ( 0 < $rating ) {
-		/* translators: %s: rating */
-		$label = sprintf( __( 'Rated %s out of 5', 'woocommerce' ), $rating );
-		$html  = '<div class="star-rating" role="img" aria-label="' . esc_attr( $label ) . '">' . wc_get_star_rating_html( $rating, $count ) . '</div>';
-	}
+    //nếu đây không phải là trang category thì không có gì xảy ra
+    if(is_search() || is_singular( 'product' )){
+        $html = '';
+
+        if ( 0 < $rating ) {
+            /* translators: %s: rating */
+            $label = sprintf( __( 'Rated %s out of 5', 'woocommerce' ), $rating );
+            $html  = '<div class="star-rating" role="img" aria-label="' . esc_attr( $label ) . '">' . wc_get_star_rating_html( $rating, $count ). '</div>';
+        }
+    }
+    //Ngược lại là trang category thì hiển thi đánh giá chung cho các sản phẩm
+    else{
+        $html = '';
+        global $product;//khai báo sản phẩm
+        $review_count = $product->get_review_count();//lấy ra tổng số người đánh giá
+        $evaluate = '';
+        if ( 0 < $rating ) {
+            if($rating < 3){
+                $evaluate = 'Kém';
+            }elseif ($rating > 3 && $rating < 4){
+                $evaluate = 'Tạm';
+            }elseif ($rating > 4 && $rating < 5){
+                $evaluate = 'Tốt';
+            }else{
+                $evaluate = 'Rất tốt';
+            }
+            /* translators: %s: rating */
+            $label = sprintf( __( 'Rated %s out of 5', 'woocommerce' ), $rating );
+            $html  = '<div class="star-rating" role="img" aria-label="' . esc_attr( $label ) . '">' . wc_get_star_rating_html( $rating, $count ). '</div> <sup>'."(".esc_html(substr($rating, 0, -1)."/5)").'
+            <br>'."Đánh giá: ".esc_html($evaluate). '<br>' ."Số người đánh giá: ".esc_html($review_count). '</sup>';
+        }
+    }
 
 	return apply_filters( 'woocommerce_product_get_rating_html', $html, $rating, $count );
 }
@@ -3563,14 +3589,14 @@ function wc_get_rating_html( $rating, $count = 0 ) {
  * @return string
  */
 function wc_get_star_rating_html( $rating, $count = 0 ) {
-	$html = '<span style="width:' . ( ( $rating / 5 ) * 100 ) . '%">';
+	$html = '<span style="width:' .( ( $rating / 5 ) * 100 ) . '%">';
 
 	if ( 0 < $count ) {
 		/* translators: 1: rating 2: rating count */
 		$html .= sprintf( _n( 'Rated %1$s out of 5 based on %2$s customer rating', 'Rated %1$s out of 5 based on %2$s customer ratings', $count, 'woocommerce' ), '<strong class="rating">' . esc_html( $rating ) . '</strong>', '<span class="rating">' . esc_html( $count ) . '</span>' );
 	} else {
 		/* translators: %s: rating */
-		$html .= sprintf( esc_html__( 'Rated %s out of 5', 'woocommerce' ), '<strong class="rating">' . esc_html( $rating ) . '</strong>' );
+		$html .= sprintf( esc_html__( 'Rated %s out of 5', 'woocommerce' ), '<strong class="rating">' . esc_html($rating ) . '</strong>' );
 	}
 
 	$html .= '</span>';
