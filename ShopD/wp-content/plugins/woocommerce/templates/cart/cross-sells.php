@@ -15,6 +15,7 @@
  * @version 4.4.0
  */
 
+//  Cross-sells
 defined('ABSPATH') || exit;
 
 if ($cross_sells): ?>
