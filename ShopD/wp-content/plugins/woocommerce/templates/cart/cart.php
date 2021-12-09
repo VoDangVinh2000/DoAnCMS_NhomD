@@ -142,20 +142,21 @@ echo apply_filters('woocommerce_cart_item_subtotal', WC()->cart->get_product_sub
 
             <tr>
                 <td colspan="6" class="actions">
-
+                    <!-- Coupon -->
                     <?php if (wc_coupons_enabled()) {?>
                     <div class="coupon">
                         <label for="coupon_code"><?php esc_html_e('Coupon:', 'woocommerce');?></label> <input
                             type="text" name="coupon_code" class="input-text" id="coupon_code" value=""
                             placeholder="<?php esc_attr_e('Mã giảm giá', 'woocommerce');?>" style="float: left;box-sizing: border-box;border: 1px solid #d3ced2;padding: 6px 6px 5px;margin: 0 4px 0 0px;
                             outline: 0;line-height: 1;vertical-align: middle; width: 50%" />
+                        <!-- css coupon -->
                         <button type="submit" class="button" name="apply_coupon"
                             style="background: #333333; border: 1px; border-radius: 20px;"
                             value="<?php esc_attr_e('Áp dụng', 'woocommerce');?>"><?php esc_attr_e('Áp dụng', 'woocommerce');?></button>
                         <?php do_action('woocommerce_cart_coupon');?>
                     </div>
                     <?php }?>
-
+                    <!-- Cập nhật giỏ hàng -->
                     <button type="submit" class="button" name="update_cart"
                         value="<?php esc_attr_e('Cập nhật giỏ hàng', 'woocommerce');?>" style="
                         background: black!important;

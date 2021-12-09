@@ -23,26 +23,7 @@
     word-wrap: break-word;
     font-family: 'Roboto',sans-serif;
 }
-/* .woocommerce table.shop_table {
-    border: 1px solid rgba(0,0,0,.1);
-    margin: 0 -1px 24px 0;
-    text-align: left;
-    width: 100%;
-    border-collapse: separate;
-    border-radius: 5px;
-}
-.woocommerce-cart table.cart th{
-    border-bottom-width: 0;
-    padding: 0.7rem 1.6rem;
-}
-.woocommerce table.shop_table-adjust th {
-    font-weight: 700;
-    padding: 9px 12px;
-} */
-/* .woocommerce-cart table.shop_table .woocommerce-Price-amount, .woocommerce-cart table.shop_table td.product-name{
-    font-weight: 700px;
-} */
-/* .woocommerce-cart-form-adjust tr{
+
     background: rebeccapurple;
 } */
 .woocommerce table.shop_table_adjust thead{
