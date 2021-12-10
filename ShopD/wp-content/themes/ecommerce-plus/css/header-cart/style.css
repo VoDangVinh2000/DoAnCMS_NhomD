@@ -1,0 +1,112 @@
+/* Header cart */
+.site-title h1 {
+    color: white;
+}
+.site-title a{
+    color: coral !important;
+}
+p.site-description {
+    color: white;
+}
+.header-storefront {
+    background:#333;
+}
+#theme-header{
+    padding-top: 20px;
+    background:black;
+}
+
+ul#primary-menu a {
+    color: white;
+}
+.header-icon-container .fa {
+    color: white;
+    font-family: 'fontawesome';
+}
+
+.widget_shopping_cart_content{
+    display: block;
+}
+.header-cart-block ul.site-header-cart{
+    display: block;
+
+}
+p.woocommerce-mini-cart__buttons.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+ul.site-header-cart.menu.list-unstyled.text-center {
+    overflow-y: scroll;
+    right: -190px;
+}
+.woocommerce .widget_shopping_cart .buttons a, .woocommerce.widget_shopping_cart .buttons a {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background: coral;
+
+}
+.woocommerce ul.cart_list li, .woocommerce ul.product_list_widget li {
+    padding: 16px 16px;
+    margin: 0;
+    list-style: none;
+}
+.woocommerce ul.cart_list li a, .woocommerce ul.product_list_widget li a {
+    display: block;
+    font-weight: 700;
+    color: coral;
+}
+.woocommerce ul.cart_list li a:hover, .woocommerce ul.product_list_widget li a:hover {
+    display: block;
+    font-weight: 700;
+    color: black;
+}
+.woocommerce .widget_shopping_cart .buttons a:hover, .woocommerce.widget_shopping_cart .buttons a:hover{
+    background: black;
+}
+.woocommerce ul.cart_list li, .woocommerce ul.product_list_widget li {
+    padding: 15px 8px;
+    margin: 0;
+    list-style: none;
+}
+
+.woocommerce .widget_shopping_cart .cart_list li, .woocommerce.widget_shopping_cart .cart_list li {
+    padding: 25px;
+    border: gray 1px solid;
+}
+.woocommerce .widget_shopping_cart .total, .woocommerce.widget_shopping_cart .total {
+    border-top: 3px double #ebe9eb;
+    border: none;
+    padding: 4px 0 0;
+}
+span.quantity:hover {
+    color: blue;
+}
+.menu-from-serach{
+    text-align: center;
+}
+span.count {
+    background-color: coral !important;
+}
+.header-cart-inner .amount-cart::before{
+    border-right: 7px solid coral !important;
+}
+.header-cart-inner .cart-contents span, .header-cart-inner .amount-cart {
+    background-color: coral !important;
+}
+ul#primary-menu a:hover{
+    color: coral;
+}
+ul.site-header-cart {
+    height: 300px;
+    opacity: 0;
+    display: none;
+    position: absolute;
+    z-index: 50;
+}
+/* Submenu */
+.sub-menu li{
+    background:#333333;
+    color: black;
+}
+

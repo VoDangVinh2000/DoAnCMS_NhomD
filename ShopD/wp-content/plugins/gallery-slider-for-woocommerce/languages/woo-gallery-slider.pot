@@ -1,0 +1,891 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Gallery Slider for WooCommerce\n"
+"POT-Creation-Date: 2020-12-30 16:23+0600\n"
+"PO-Revision-Date: 2020-12-30 16:24+0600\n"
+"Last-Translator: \n"
+"Language-Team: ShapedPlugin\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_x;esc_html__;esc_html_e;esc_html_x;esc_attr__;"
+"esc_attr_e;esc_attr_x\n"
+"X-Poedit-SearchPath-0: admin\n"
+"X-Poedit-SearchPath-1: gulpfile.js\n"
+"X-Poedit-SearchPath-2: includes\n"
+"X-Poedit-SearchPath-3: index.php\n"
+"X-Poedit-SearchPath-4: languages\n"
+"X-Poedit-SearchPath-5: package.json\n"
+"X-Poedit-SearchPath-6: public\n"
+"X-Poedit-SearchPath-7: readme.txt\n"
+"X-Poedit-SearchPath-8: uninstall.php\n"
+"X-Poedit-SearchPath-9: woo-gallery-slider.php\n"
+
+#: admin/class-woo-gallery-slider-admin.php:96
+msgid "Variation Image Gallery"
+msgstr ""
+
+#: admin/class-woo-gallery-slider-admin.php:126
+msgid "Remove all"
+msgstr ""
+
+#: admin/class-woo-gallery-slider-admin.php:131
+msgid "Add Gallery Images"
+msgstr ""
+
+#: admin/class-woo-gallery-slider-admin.php:138
+msgid "Add more"
+msgstr ""
+
+#: admin/class-woo-gallery-slider-admin.php:146
+#: admin/partials/shapedplugin-framework/fields/gallery/gallery.php:21
+msgid "Edit Gallery"
+msgstr ""
+
+#: admin/partials/class-wcgs-settings.php:25
+msgid "Woo Gallery Slider"
+msgstr ""
+
+#: admin/partials/class-wcgs-settings.php:35
+msgid ""
+"If you like Gallery Slider for WooCommerce, please leave us a ★★★★★ rating. "
+"Your Review is very important to us as it helps us to grow more."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-advance.php:56
+msgid "Advanced"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-advance.php:62
+msgid "Clean-up Data on Deletion"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-advance.php:63
+msgid ""
+"Check this box if you would like Gallery Slider for WooCommerce plugin to "
+"completely remove all of its data when the plugin is deleted."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-advance.php:69
+msgid "Additional CSS"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-advance.php:70
+msgid "Write custom CSS."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:23
+msgid "Gallery"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:28
+msgid "Infinite Loop"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:29
+msgid "Check to make the gallery thumbnail infinite loop."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:36
+msgid "Adaptive Height"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:37
+msgid "On/Off adaptive height."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:43
+msgid "Accessibility"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:44
+msgid "On/Off accessibility."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:50
+msgid "RTL Mode"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:51
+msgid "On/Off the mode for RTL languages."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:56
+msgid "Slider Navigation & Pagination"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:61
+msgid "Slider Navigation"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:62
+msgid "Show/Hide slider navigation."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:63
+#: admin/partials/sections/class-wcgs-gallery.php:102
+#: admin/partials/sections/class-wcgs-gallery.php:133
+#: admin/partials/sections/class-wcgs-lightbox.php:56
+#: admin/partials/sections/class-wcgs-lightbox.php:75
+#: admin/partials/sections/class-wcgs-lightbox.php:86
+#: admin/partials/sections/class-wcgs-lightbox.php:97
+msgid "Show"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:64
+#: admin/partials/sections/class-wcgs-gallery.php:103
+#: admin/partials/sections/class-wcgs-gallery.php:134
+#: admin/partials/sections/class-wcgs-lightbox.php:57
+#: admin/partials/sections/class-wcgs-lightbox.php:76
+#: admin/partials/sections/class-wcgs-lightbox.php:87
+#: admin/partials/sections/class-wcgs-lightbox.php:98
+msgid "Hide"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:72
+msgid "Navigation Icon Size"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:73
+msgid "Set navigation icon size."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:81
+msgid "Navigation Color"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:82
+msgid "Set navigation icon and background colors."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:84
+#: admin/partials/sections/class-wcgs-gallery.php:114
+#: admin/partials/sections/class-wcgs-gallery.php:154
+#: admin/partials/sections/class-wcgs-lightbox.php:38
+#: admin/partials/shapedplugin-framework/fields/background/background.php:279
+msgid "Color"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:85
+#: admin/partials/sections/class-wcgs-gallery.php:155
+#: admin/partials/sections/class-wcgs-lightbox.php:39
+msgid "Hover Color"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:86
+#: admin/partials/sections/class-wcgs-gallery.php:156
+#: admin/partials/sections/class-wcgs-lightbox.php:40
+msgid "Background"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:87
+#: admin/partials/sections/class-wcgs-gallery.php:157
+#: admin/partials/sections/class-wcgs-lightbox.php:41
+msgid "Hover Background"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:100
+msgid "Slider Pagination"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:101
+msgid "Show/Hide slider pagination bullet."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:111
+msgid "Pagination Color"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:112
+msgid "Set slider pagination bullet color."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:115
+msgid "Active Color"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:126
+#: admin/partials/sections/class-wcgs-gallery.php:131
+msgid "Thumbnails Navigation"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:132
+msgid "Check to show gallery thumbnails navigation arrow."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:142
+msgid "Thumbnail Navigation Icon Size"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:143
+msgid "Set thumbnail navigation icon size."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:151
+msgid "Thumbnail Navigation Color"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:152
+msgid "Set thumbnail navigation colors."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:169
+msgid "Product Image"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:174
+msgid "Enable Image Zoom"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:175
+msgid "On/Off product image zoom."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:181
+msgid "Enable Zoom for Mobile Devices"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:182
+msgid "Enable or Disable image zoom for mobile devices."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:189
+msgid "Image Size"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:190
+msgid "Select images size."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:196
+msgid "Preloader"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-gallery.php:197
+msgid "Preloader will show when variation changes."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-general.php:23
+msgid "General"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-general.php:28
+msgid "Gallery Layout"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-general.php:29
+msgid "Choose a layout for gallery."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-general.php:33
+msgid "Horizontal"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-general.php:46
+msgid "Thumbnails Item To Show"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-general.php:47
+msgid "Set a number of thumbnails item to show."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-general.php:54
+msgid "Thumbnails Space"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-general.php:55
+msgid "Set a space between thumbnails."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-general.php:63
+msgid "Border"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-general.php:64
+msgid "Set border for thumbnail."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-general.php:79
+msgid "Thumbnails Size"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-general.php:80
+msgid "Select size for thumbnails."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-general.php:87
+msgid "Gallery Width"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-general.php:88
+msgid "Set gallery width for large devices in %. Default value is 50%."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-general.php:98
+msgid "Responsive Gallery Width"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-general.php:99
+msgid "Set gallery responsive width in px. Default unit is px."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-general.php:110
+msgid "Gallery Bottom Gap"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-general.php:111
+msgid "Set gallery slider width in px. Default value is 30px."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-general.php:119
+msgid "Gallery Image Source"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-general.php:120
+msgid "Set gallery image source."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-general.php:122
+msgid "All images attached to this product"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-general.php:123
+msgid "Only images uploaded to the product gallery"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-general.php:130
+msgid "Include Feature Image"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-general.php:131
+msgid ""
+"If check, Product Image (Feature Image) will show as the first image in the "
+"Gallery. If unchecked and Product Image is not used in the Gallery unless it "
+"is uploaded to the Product Gallery."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-lightbox.php:23
+msgid "Lightbox"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-lightbox.php:28
+msgid "Enable Lightbox"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-lightbox.php:29
+msgid "On/Off lightbox."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-lightbox.php:35
+msgid "Lightbox Icon Color"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-lightbox.php:36
+msgid "Set lightbox icon colors."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-lightbox.php:54
+msgid "Lightbox Caption"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-lightbox.php:55
+msgid "Show caption in lightbox."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-lightbox.php:65
+msgid "Caption Color"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-lightbox.php:66
+msgid "Change caption color."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-lightbox.php:73
+msgid "Image Counter"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-lightbox.php:74
+msgid "Show lightbox image counter."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-lightbox.php:84
+msgid "Social Share Button"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-lightbox.php:85
+msgid "Show/Hide social share button."
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-lightbox.php:95
+msgid "Full Screen Button"
+msgstr ""
+
+#: admin/partials/sections/class-wcgs-lightbox.php:96
+msgid "Show/Hide image full screen button."
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/classes/options.class.php:220
+msgid "Error while saving the changes."
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/classes/options.class.php:281
+msgid "Settings successfully imported."
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/classes/options.class.php:293
+#: admin/partials/shapedplugin-framework/classes/options.class.php:309
+msgid "Default settings restored."
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/classes/options.class.php:380
+msgid "Settings saved."
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/classes/options.class.php:568
+msgid "show all options"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/classes/options.class.php:570
+msgid "Search option(s)"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/classes/options.class.php:573
+#: admin/partials/shapedplugin-framework/classes/options.class.php:688
+msgid "Save"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/classes/options.class.php:573
+#: admin/partials/shapedplugin-framework/classes/options.class.php:688
+msgid "Saving..."
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/classes/options.class.php:574
+#: admin/partials/shapedplugin-framework/classes/options.class.php:689
+msgid "Reset Section"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/classes/options.class.php:574
+#: admin/partials/shapedplugin-framework/classes/options.class.php:689
+msgid "Are you sure to reset this section options?"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/classes/options.class.php:575
+#: admin/partials/shapedplugin-framework/classes/options.class.php:690
+msgid "Reset All"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/classes/options.class.php:575
+#: admin/partials/shapedplugin-framework/classes/options.class.php:690
+msgid "Are you sure to reset all options?"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/classes/options.class.php:665
+msgid "No option provided by developer."
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/classes/setup.class.php:241
+msgid "Are you sure?"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/classes/setup.class.php:242
+msgid "Restoring options."
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/classes/setup.class.php:243
+msgid "Importing options."
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/classes/setup.class.php:281
+#, php-format
+msgid "Ooops! This field type (%s) can not be used here, yet."
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/classes/setup.class.php:344
+msgid "This field class is not available!"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/classes/setup.class.php:347
+msgid "This type is not found!"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:34
+msgid "No background selected"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:62
+#: admin/partials/shapedplugin-framework/fields/date/date.php:31
+msgid "From"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:79
+#: admin/partials/shapedplugin-framework/fields/date/date.php:32
+msgid "To"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:96
+msgid "Direction"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:102
+msgid "Gradient Direction"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:103
+msgid "&#8659; top to bottom"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:104
+msgid "&#8658; left to right"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:105
+msgid "&#8664; corner top to right"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:106
+msgid "&#8665; corner top to left"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:145
+msgid "Background Position"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:146
+msgid "Left Top"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:147
+msgid "Left Center"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:148
+msgid "Left Bottom"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:149
+msgid "Center Top"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:150
+msgid "Center Center"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:151
+msgid "Center Bottom"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:152
+msgid "Right Top"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:153
+msgid "Right Center"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:154
+msgid "Right Bottom"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:171
+msgid "Background Repeat"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:172
+msgid "Repeat"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:173
+msgid "No Repeat"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:174
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:175
+msgid "Repeat Vertically"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:192
+msgid "Background Attachment"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:193
+msgid "Scroll"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:194
+msgid "Fixed"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:211
+msgid "Background Size"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:212
+msgid "Cover"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:213
+msgid "Contain"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:230
+msgid "Background Origin"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:231
+#: admin/partials/shapedplugin-framework/fields/background/background.php:252
+msgid "Padding Box"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:232
+#: admin/partials/shapedplugin-framework/fields/background/background.php:251
+msgid "Border Box"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:233
+#: admin/partials/shapedplugin-framework/fields/background/background.php:253
+msgid "Content Box"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:250
+msgid "Background Clip"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:270
+msgid "Background Blend Mode"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:271
+#: admin/partials/shapedplugin-framework/fields/link_color/link_color.php:36
+msgid "Normal"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:272
+msgid "Multiply"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:273
+msgid "Screen"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:274
+msgid "Overlay"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:275
+msgid "Darken"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:276
+msgid "Lighten"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:277
+msgid "Color Dodge"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:278
+msgid "Saturation"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/background/background.php:280
+msgid "Luminosity"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/border/border.php:30
+#: admin/partials/shapedplugin-framework/fields/spacing/spacing.php:25
+msgid "top"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/border/border.php:31
+#: admin/partials/shapedplugin-framework/fields/spacing/spacing.php:26
+msgid "right"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/border/border.php:32
+#: admin/partials/shapedplugin-framework/fields/spacing/spacing.php:27
+msgid "bottom"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/border/border.php:33
+#: admin/partials/shapedplugin-framework/fields/spacing/spacing.php:28
+msgid "left"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/border/border.php:34
+#: admin/partials/shapedplugin-framework/fields/spacing/spacing.php:29
+msgid "all"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/border/border.php:59
+msgid "Solid"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/border/border.php:60
+msgid "Dashed"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/border/border.php:61
+msgid "Dotted"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/border/border.php:62
+msgid "Double"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/border/border.php:63
+msgid "Inset"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/border/border.php:64
+msgid "Outset"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/border/border.php:65
+msgid "Groove"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/border/border.php:66
+msgid "ridge"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/border/border.php:67
+msgid "None"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/checkbox/checkbox.php:62
+#: admin/partials/shapedplugin-framework/fields/radio/radio.php:61
+#: admin/partials/shapedplugin-framework/fields/select/select.php:79
+msgid "No data provided for this option type."
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/dimensions/dimensions.php:27
+msgid "width"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/dimensions/dimensions.php:28
+msgid "height"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/gallery/gallery.php:20
+msgid "Add Gallery"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/gallery/gallery.php:22
+msgid "Clear"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/group/group.php:23
+msgid "Add New"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/group/group.php:35
+#: admin/partials/shapedplugin-framework/fields/repeater/repeater.php:30
+msgid "Error: Nested field id can not be same with another nested field id."
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/group/group.php:46
+#: admin/partials/shapedplugin-framework/fields/group/group.php:86
+#: admin/partials/shapedplugin-framework/fields/repeater/repeater.php:51
+#: admin/partials/shapedplugin-framework/fields/repeater/repeater.php:82
+msgid "Are you sure to delete this item?"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/group/group.php:121
+#: admin/partials/shapedplugin-framework/fields/repeater/repeater.php:96
+msgid "You can not add more than"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/group/group.php:122
+#: admin/partials/shapedplugin-framework/fields/repeater/repeater.php:97
+msgid "You can not remove less than"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/image_sizes/image_sizes.php:57
+msgid "Original uploaded image"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/image_sizes/image_sizes.php:104
+msgid "No image sizes found."
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/link_color/link_color.php:37
+msgid "Hover"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/link_color/link_color.php:38
+msgid "Active"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/link_color/link_color.php:39
+msgid "Visited"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/link_color/link_color.php:40
+msgid "Focus"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/media/media.php:23
+#: admin/partials/shapedplugin-framework/fields/upload/upload.php:21
+msgid "Upload"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/media/media.php:24
+#: admin/partials/shapedplugin-framework/fields/upload/upload.php:22
+msgid "Remove"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/media/media.php:57
+msgid "No media selected"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/sorter/sorter.php:21
+msgid "Enabled"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/sorter/sorter.php:22
+msgid "Disabled"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/switcher/switcher.php:23
+msgid "On"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/switcher/switcher.php:24
+msgid "Off"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/fields/textarea/textarea.php:37
+msgid "Add Shortcode"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/functions/actions.php:18
+msgid "Error: Invalid nonce verification."
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/functions/validate.php:14
+#: admin/partials/shapedplugin-framework/functions/validate.php:86
+msgid "Please write a valid email address!"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/functions/validate.php:32
+#: admin/partials/shapedplugin-framework/functions/validate.php:106
+msgid "Please write a numeric data!"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/functions/validate.php:50
+#: admin/partials/shapedplugin-framework/functions/validate.php:126
+msgid "Error! This field is required!"
+msgstr ""
+
+#: admin/partials/shapedplugin-framework/functions/validate.php:68
+#: admin/partials/shapedplugin-framework/functions/validate.php:146
+msgid "Please write a valid url!"
+msgstr ""

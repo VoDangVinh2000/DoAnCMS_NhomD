@@ -4,6 +4,9 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
+
+<link rel="stylesheet" href="<?= get_template_directory_uri() . '/css/header-cart/style.css' ?>">
+
 <?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php endif;
@@ -19,7 +22,6 @@ $ecommerce_plus_options  = ecommerce_plus_get_theme_options();
 <div id="page" class="site">
 <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ecommerce-plus' ); ?></a>
 <div class="menu-overlay"></div>
-
 	<header id="masthead" class="site-header <?php echo esc_attr(ecommerce_plus_get_header_style()); ?>" role="banner">
 
 		<?php
