@@ -38,7 +38,7 @@ p.woocommerce-mini-cart__buttons.buttons {
 }
 ul.site-header-cart.menu.list-unstyled.text-center {
     overflow-y: scroll;
-    right: -190px;
+    right: 0;
 }
 .woocommerce .widget_shopping_cart .buttons a, .woocommerce.widget_shopping_cart .buttons a {
     margin-right: 5px;
