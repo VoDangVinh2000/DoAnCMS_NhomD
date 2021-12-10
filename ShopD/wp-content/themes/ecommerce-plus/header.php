@@ -7,6 +7,7 @@
 
 <link rel="stylesheet" href="<?= get_template_directory_uri() . '/css/header-cart/style.css' ?>">
 
+    <link rel="stylesheet" href="<?= get_template_directory_uri() . '/css/page-category/category.css' ?>">
 <?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php endif;

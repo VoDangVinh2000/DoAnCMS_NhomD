@@ -6,10 +6,18 @@
  * @since 1.0.0
  */
 
-get_header(); 
+get_header();
 ?>
 <div id="inner-content-wrapper" class="container page-section">
+<!--   Nếu là trang home-->
+    <?php if(is_search() || is_singular( 'product' )){?>
     <div id="primary" class="content-area">
+        <?php }
+        //ngược lại nếu là trang category
+        else {;?>
+    <div id="primary" class="content-area page-category-style">
+
+    <?php } ?>
         <main id="main" class="site-main" role="main">
 			
 			<?php if (class_exists('WooCommerce') && is_woocommerce()) : ?>	
