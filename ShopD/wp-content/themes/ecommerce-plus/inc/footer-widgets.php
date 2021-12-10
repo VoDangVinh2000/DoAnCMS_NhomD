@@ -8,30 +8,24 @@
 		<?php
 		if ( is_active_sidebar( 'footer-sidebar-1' ) ) {
 		?>
-			<div class="col-md-3 col-sm-3 footer-widget">
+			<div class="col-md-4 col-sm-3 footer-widget">
 				<?php dynamic_sidebar( 'footer-sidebar-1' ); ?>
 			</div>
 		<?php
 		}
 		if ( is_active_sidebar( 'footer-sidebar-2' ) ) {
 		?>
-			<div class="col-md-3 col-sm-3 footer-widget">
+			<div class="col-md-4 col-sm-4 footer-widget">
 				<?php dynamic_sidebar( 'footer-sidebar-2' ); ?>
 			</div>			
 		<?php
 		}
 		if ( is_active_sidebar( 'footer-sidebar-3' ) ) {
 		?>
-			<div class="col-md-3 col-sm-3 footer-widget">
+			<div class="col-md-4 col-sm-4 footer-widget">
 				<?php dynamic_sidebar( 'footer-sidebar-3' ); ?>
 			</div>
 		<?php
-		}
-		if ( is_active_sidebar( 'footer-sidebar-4' ) ) {
-		?>
-			<div class="col-md-3 col-sm-3 footer-widget">
-				<?php dynamic_sidebar( 'footer-sidebar-4' ); ?>
-			</div>
-		<?php }	?>
+		}	?>
 	</aside><!-- .widget-area -->
 </div>
