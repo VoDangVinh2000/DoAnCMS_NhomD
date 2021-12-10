@@ -17,11 +17,12 @@
  * @version 2.4.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
+if (!defined('ABSPATH')) {
+    exit; // Exit if accessed directly.
 }
 ?>
 
-<a href="<?php echo esc_url( wc_get_checkout_url() ); ?>" class="checkout-button button alt wc-forward">
-	<?php esc_html_e( 'Proceed to checkout', 'woocommerce' ); ?>
+<a href="<?php echo esc_url(wc_get_checkout_url()); ?>" class="checkout-button button alt wc-forward"
+    style="background: #333333; border-radius: 20px; font-size: large;">
+    <?php esc_html_e('Tiến hành thanh toán', 'woocommerce');?>
 </a>
