@@ -1091,6 +1091,7 @@ function ecommerce_plus_popup_cart()
 // Disables the block editor from widget areas.
 add_filter('use_widgets_block_editor', '__return_false');
 
+/* ================================== Recently Viewed procts ================================================ */
 // ========================= Thêm code sản phẩm vừa xem ========================= //
 function giniit_track_product_view()
 {

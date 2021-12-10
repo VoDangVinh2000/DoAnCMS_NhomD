@@ -50,6 +50,7 @@ if ($related_products) : ?>
 
 	</section>
 	<?php
+	/* ================================== Recently Viewed procts ================================================ */
 	// ================================ Thêm code sản phẩm vừa xem  =========================================== //
 	global $woocommerce;
 	$viewed_products = !empty($_COOKIE['woocommerce_recently_viewed']) ? (array) explode('|', $_COOKIE['woocommerce_recently_viewed']) : array();
