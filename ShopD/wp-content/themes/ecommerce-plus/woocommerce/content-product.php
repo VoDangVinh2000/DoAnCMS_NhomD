@@ -26,7 +26,7 @@ if (empty($product) || !$product->is_visible()) {
 }
 ?>
 <?php
-if (!is_single() && !is_product_category()) {
+if (!is_single() && !is_product_category() && !is_cart()) {
 ?>
 	<div class="col-sm-4">
 		<div class="new-products-inside">

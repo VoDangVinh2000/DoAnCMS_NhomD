@@ -111,3 +111,7 @@
 }
 
 /*end css for new products*/
+
+.inside-new-products-image .add_to_cart_button{
+    display: none !important;
+}

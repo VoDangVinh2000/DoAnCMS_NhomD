@@ -20,6 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 
+
 ?>
 <?php 
 if(!is_single() && !is_product_category() && !is_cart()){
