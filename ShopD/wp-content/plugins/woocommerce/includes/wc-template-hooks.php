@@ -91,9 +91,11 @@ add_action( 'woocommerce_no_products_found', 'wc_no_products_found' );
  * @see woocommerce_template_loop_price()
  * @see woocommerce_template_loop_rating()
  */
+
+
 add_action( 'woocommerce_before_shop_loop_item', 'woocommerce_template_loop_product_link_open', 10 );
 add_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5 );
-add_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
+
 add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10 );
 add_action( 'woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 10 );
 
@@ -101,9 +103,12 @@ add_action( 'woocommerce_before_subcategory', 'woocommerce_template_loop_categor
 add_action( 'woocommerce_shop_loop_subcategory_title', 'woocommerce_template_loop_category_title', 10 );
 add_action( 'woocommerce_after_subcategory', 'woocommerce_template_loop_category_link_close', 10 );
 
+
+
+
 add_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10 );
 add_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5 );
-
+// add_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
 /**
  * Subcategories.
  *
@@ -312,3 +317,10 @@ add_action( 'woocommerce_before_customer_login_form', 'woocommerce_output_all_no
 add_action( 'woocommerce_before_lost_password_form', 'woocommerce_output_all_notices', 10 );
 add_action( 'before_woocommerce_pay', 'woocommerce_output_all_notices', 10 );
 add_action( 'woocommerce_before_reset_password_form', 'woocommerce_output_all_notices', 10 );
+
+
+/*Vinh*/
+add_action('new_product_div','begin_new_product_div');
+
+add_action('end_new_product_div','end_new_product_div');
+/**end Vinh */

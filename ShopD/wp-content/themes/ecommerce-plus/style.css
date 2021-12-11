@@ -5843,6 +5843,7 @@ select.woo-product-search-select:focus {
 }
 
 #top-social-right .fa.fa-facebook::before {
+<<<<<<< HEAD
   content: "\f09a";
   font-family: fontawesome;
 }
@@ -6262,3 +6263,8 @@ select.woo-product-search-select:focus {
 }
 
 /* =============================END  CSS Detail ========================================= */
+=======
+    content: "\f09a";
+    font-family: fontawesome;
+}
+>>>>>>> NhomD-Vĩnh/Middle_HomePage

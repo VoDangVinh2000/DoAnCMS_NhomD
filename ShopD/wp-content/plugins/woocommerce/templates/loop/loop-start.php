@@ -18,5 +18,17 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+
+
+
 ?>
-<ul class="products columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?>">
+<?php 
+if(!is_single()){
+
+?>
+<div class="new-products" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-offset="0" data-aos-delay="35" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
+		<h1 class="text-center">New Products</h1>
+		<div class="row">	
+<?php } else{?>
+	<ul class="products columns-<?php echo esc_attr( wc_get_loop_prop( 'columns' ) ); ?>">
+<?php }?>

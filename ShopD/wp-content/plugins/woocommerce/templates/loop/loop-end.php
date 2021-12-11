@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Product Loop End
  *
@@ -15,8 +16,14 @@
  * @version     2.0.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
 	exit;
 }
 ?>
-</ul>
+<?php
+if (!is_single()) {?>
+	</div>
+	</div 
+<?php } else { ?> 
+	</ul>
+<?php } ?>

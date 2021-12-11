@@ -22,3 +22,7 @@
 
 2021-12-11T00:17:12+00:00 CRITICAL syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-content\themes\ecommerce-plus\functions.php on line 138
 
+2021-12-11T00:30:05+00:00 CRITICAL syntax error, unexpected end of file in D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-content\themes\ecommerce-plus\header.php on line 202
+
+2021-12-11T00:30:39+00:00 CRITICAL syntax error, unexpected end of file in D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-content\themes\ecommerce-plus\header.php on line 199
+
