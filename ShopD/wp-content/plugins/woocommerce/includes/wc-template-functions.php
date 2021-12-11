@@ -963,14 +963,14 @@ if ( ! function_exists( 'woocommerce_content' ) ) {
 	 * without hooks or modifying core templates.
 	 */
 	function woocommerce_content() {
-
+		//var_dump(is_singular( 'product' ) );
 		if ( is_singular( 'product' ) ) {
 
 			while ( have_posts() ) :
 				the_post();
 				wc_get_template_part( 'content', 'single-product' );
 			endwhile;
-
+			
 		} else {
 			?>
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2021-12-08T03:22:57+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in E:\HK5\DoAnCMS_NhomD\ShopD\wp-content\themes\ecommerce-plus\functions.php on line 749
 
 2021-12-08T03:22:57+00:00 CRITICAL syntax error, unexpected '<', expecting end of file in E:\HK5\DoAnCMS_NhomD\ShopD\wp-content\themes\ecommerce-plus\functions.php on line 749
@@ -36,3 +37,7 @@
 
 2021-12-08T14:48:41+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in E:\HK5\DoAnCMS_NhomD\ShopD\wp-includes\Requests\Transport\cURL.php on line 483
 
+=======
+2021-12-08T13:03:08+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in D:\Chuyen-De-CMS\DoAnCMS_NhomD\ShopD\wp-content\themes\ecommerce-plus\inc\widgets\cart-wishlist-acc.php on line 5
+
+>>>>>>> NhomD-Trường/RecentlyProducts
