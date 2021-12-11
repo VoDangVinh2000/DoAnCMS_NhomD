@@ -28,3 +28,5 @@
 
 2021-12-11T01:01:33+00:00 CRITICAL syntax error, unexpected '<<' (T_SL), expecting end of file in D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-content\plugins\woocommerce\templates\cart\cart.php on line 18
 
+2021-12-11T01:31:50+00:00 CRITICAL syntax error, unexpected '<<' (T_SL), expecting end of file in D:\HK5-2021\CHUYENDECMS\DoAnCMS_NhomD\ShopD\wp-content\plugins\woocommerce\templates\cart\cart.php on line 18
+

@@ -18,14 +18,11 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-if(is_product_category()){
-echo 'product-category';
-}
 
 
 ?>
 <?php 
-if(!is_single() && !is_product_category()){
+if(!is_single() && !is_product_category() && !is_cart()){
 
 ?>
 <div class="new-products" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-offset="0" data-aos-delay="35" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
