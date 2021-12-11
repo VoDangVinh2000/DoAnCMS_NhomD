@@ -21,7 +21,7 @@ if (!defined('ABSPATH')) {
 }
 ?>
 <?php
-if (!is_single()) {?>
+if (!is_single() && !is_product_category()) {?>
 	</div>
 	</div 
 <?php } else { ?> 
